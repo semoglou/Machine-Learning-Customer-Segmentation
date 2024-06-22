@@ -1,2 +1,2 @@
-# Machine-Learning-Customer-Segmentation
+# Machine Learning Customer Segmentation
 ML Customer Segmentation Project
