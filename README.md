@@ -26,8 +26,8 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 - **Customer Segmentation using RFM Quantile Scores and Category Spending Patterns**
 
 ### Part III
--**Association Rules Mining** 
--**Simple Recommendation System**
+- **Association Rules Mining** 
+- **Simple Recommendation System**
 
 ***
 
