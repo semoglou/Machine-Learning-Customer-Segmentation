@@ -82,6 +82,7 @@ Implemented Natural Language Processing techniques to systematically categorize 
 ***
 
 ## 2. Part II
+[View Part II Notebook](https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/Part_2/part_2.ipynb)
 
 <a id="2-1-rfm-analysis"></a>
 ### 2.1 RFM Analysis
@@ -94,6 +95,7 @@ Further segmentation was refined by applying quantile scoring to RFM metrics, co
 ***
 
 ## 3. Part III
+[View Part III Notebook](https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/Part_3/part_3.ipynb)
 
 <a id="3-1-association-rules-mining"></a>
 ### 3.1 Association Rules Mining
