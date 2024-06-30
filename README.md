@@ -5,16 +5,8 @@ It focuses on leveraging machine learning techniques to analyze and segment cust
 
 ***
 
-### The Data Set
-
-The project utilizes the Online Retail Data Set from the UCI Machine Learning Repository, which includes transactions (invoices) from a UK-based non-store online retail. 
-The dataset spans from December 2010 to December 2011 and includes a variety of products mainly sold to wholesalers.
-
-**Access the Data Set:** [Online Retail UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Online+Retail)
-
-***
-
 ## Table of Contents
+- [The Data Set](#the-data-set)
 - **Part I**
   - [Data Preparation & Feature Engineering](#data-preparation--feature-engineering)
   - [Exploratory Analysis](#exploratory-analysis)
@@ -25,6 +17,13 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 - **Part III**
   - [Association Rules Mining](#association-rules-mining)
   - [Simple Recommendation System](#simple-recommendation-system)
+
+### The Data Set
+
+The project utilizes the Online Retail Data Set from the UCI Machine Learning Repository, which includes transactions (invoices) from a UK-based non-store online retail. 
+The dataset spans from December 2010 to December 2011 and includes a variety of products mainly sold to wholesalers.
+
+**Access the Data Set:** [Online Retail UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/Online+Retail)
 
 ***
 
