@@ -44,7 +44,20 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 ## 1. Part I
 
 ### Data Preparation & Feature Engineering
-Initial data handling involved deduplication, handling missing values, and employing complex methods to identify and exclude cancellations and returns. Feature engineering focuses on deriving new variables that could enhance the predictive models.
+
+#### Deduplication, Missing CustomerID Removal and Data Type Conversion
+- Remove duplicate entries to ensure the uniqueness of each transaction in the dataset.
+- Entries without a 'CustomerID' are removed since they are essential for customer-specific analyses.
+- Convert data types for better compatibility with analysis tools. For instance, ensuring that dates are in datetime format and categorical data are treated as such.
+
+#### Handling Cancellations and Returns
+- **Cancellations**: Identified by 'InvoiceNo' starting with 'C', these transactions are checked against the product descriptions. Entries marked as 'Discount' but having negative quantities are treated as cancellations unless verified otherwise.
+- **Returns**: Transactions with negative quantities are examined to confirm if there is a corresponding previous transaction with a positive quantity for the same 'CustomerID' and 'StockCode'. If such a transaction exists, the negative entry is treated as a return. Otherwise, if no prior purchase is found, the transaction is considered a cancellation. Genuine returns without a recorded prior purchase are removed to maintain data accuracy.
+
+#### Data Enhancement
+- **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
+- **Adjusted Prices**: Compute adjusted prices for transactions, particularly handling discounts and bulk purchases.
+- **Invoice Total**: Calculate the total amount for each invoice to facilitate revenue analysis.
 
 ### Exploratory Analysis
 This phase involved a deep dive into the dataset to understand the distribution of variables, detect outliers, and uncover patterns to inform subsequent analyses and feature engineering efforts.
