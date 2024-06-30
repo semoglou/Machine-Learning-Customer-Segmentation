@@ -76,8 +76,24 @@ This phase involved a deep dive into the dataset to understand the distribution 
 
 <a id="1-3-nlp-driven-product-categorization"></a>
 ### 1.3 NLP-Driven Product Categorization
-Implemented Natural Language Processing techniques to systematically categorize product descriptions, enhancing the granularity of product data for improved segmentation and analysis.
+Organized a vast array of product descriptions, amounting to 3,878 entries, into well-defined categories. This categorization is driven by the goal to uncover inherent groupings that reveal subtle patterns and similarities not immediately apparent in the raw data.
 
+#### `Methodology`
+Our approach involves a process of text preprocessing and key term extraction to prepare the data for robust clustering:
+
+#### `Text Preprocessing & Key Term Extraction`
+- **Identifying Key Parts of Speech**: We specifically target nouns in product descriptions as they often indicate key features or elements. This process involves labeling each word according to its part of speech.
+- **Condensing Words to Their Roots**: Applying stemming techniques, we reduce words to their root forms. This normalization allows us to aggregate similar terms across different descriptions, enhancing consistency.
+- **Extracting and Counting Terms**: From the stemmed nouns, we compile a frequency map to gauge the significance of each term within the corpus. This includes counting occurrences and noting variations.
+- **Selecting Representative Terms**: For groups of words sharing the same root, we choose the shortest term as the representative for simplicity and clarity.
+#### `Keyword Filtering Strategy`
+- **Exclusion Criteria**: We filter out terms based on their commonality, rarity, and informativeness. Only terms that contribute meaningfully to product differentiation are retained.
+- **Threshold Settings**: We implement a word length threshold to ensure focus on substantial terms, excluding words with non-contributive characters like '+' or '/'.
+#### `Constructing a Data Matrix for Clustering`
+- **Binary Variable Transformation**: Each qualifying keyword is converted into a binary variable for each product description, indicating the presence or absence of that keyword.
+- **Integration of Price Range Data**: By including price segmentation, we add an economic dimension to the clustering process, aligning it with both qualitative and quantitative attributes.
+#### `Clustering Output`
+The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each representing a distinct category of products
 ***
 
 ## 2. Part II
