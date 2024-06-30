@@ -55,17 +55,8 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 #### `Handling Cancellations and Returns`
 The process for handling cancellations and returns is crucial to ensure data integrity and accuracy in analysis:
 
-- **Cancellations**: Identified primarily by an 'InvoiceNo' that starts with 'C'. These entries typically represent transactions that were cancelled after being initiated. However, not all cancellations directly imply errors or unwanted transactions. For example, transactions described as 'Discount' with negative quantities are automatically treated as cancellations unless further verification suggests otherwise. This categorization helps in distinguishing between genuine transaction cancellations and adjustments made for other reasons such as promotions.
-
-- **Potential Returns**: Transactions with negative quantities are scrutinized to determine if they are genuine returns:
-  - A return is considered 'potential' if there exists a corresponding transaction prior to it with a positive quantity for the same 'StockCode' and 'CustomerID'. This matching confirms that the negative transaction is likely a genuine return, as it reverses a part of a previous purchase.
-  - If no prior matching transaction is found, the negative quantity is treated as a cancellation. This distinction is important because it identifies entries that may not necessarily represent actual product returns but rather corrections or cancellations without a prior sale.
-
-- **Handling Unmatched Returns**: In cases where a negative transaction (potential return) does not match any previous positive transaction, a challenge arises in confirming whether these are genuine returns or data irregularities. For data cleanliness and to avoid analysis skew:
-  - These entries are often removed from the dataset unless additional information (e.g., customer communications or detailed transaction logs) justifies their inclusion.
-  - It's crucial to note that some of these unmatched returns might actually be legitimate returns where the original purchase was not recorded due to issues like data loss or transaction errors.
-
-This careful examination and handling of cancellations and returns ensure that the dataset used for analysis does not include misleading data, thus maintaining the reliability of the insights derived from subsequent analyses.
+Negative 'quantity' transactions are considered potential returns if there exists a corresponding prior positive transaction with the same 'product_id' from the same 'customer_id'. This ensures that the negative transaction is a genuine return and not an error or irregularity.
+If no corresponding positive transaction exists before the negative one, it is treated as a cancellation. It is important to note that some cancellations might be genuine returns without a recorded prior purchase. For such cancellations, we remove these entries from the dataset to correct the data and avoid skewing our analysis.
 
 #### `Data Enhancement`
 - **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
@@ -73,7 +64,15 @@ This careful examination and handling of cancellations and returns ensure that t
 
 <a id="1-2-exploratory-analysis"></a>
 ### 1.2 Exploratory Analysis
-This phase involved a deep dive into the dataset to understand the distribution of variables, detect outliers, and uncover patterns to inform subsequent analyses and feature engineering efforts.
+This phase involved a deep dive into the dataset to understand the distribution of variables.
+#### `Key Areas of Focus`
+- **Sales Distribution by Time**: Analyzed sales data to uncover trends across different timescales—hourly, daily, and monthly. This helps in understanding peak shopping hours, busiest shopping days, and seasonal trends which are essential for inventory and marketing strategies.
+  
+- **Customer Demographics**: Explored demographic data, enhancing the understanding of our customer base.
+
+- **Revenue by Country**: Mapped out revenue generation across different countries to pinpoint high-value markets and assess the global reach of the business.
+
+- **Product Popularity**: Investigated the most frequently purchased items by analyzing the 'Description' field.
 
 <a id="1-3-nlp-driven-product-categorization"></a>
 ### 1.3 NLP-Driven Product Categorization
