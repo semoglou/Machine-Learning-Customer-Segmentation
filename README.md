@@ -18,6 +18,8 @@ It focuses on leveraging machine learning techniques to analyze and segment cust
   - [Association Rules Mining](#association-rules-mining)
   - [Simple Recommendation System](#simple-recommendation-system)
 
+***
+
 ### The Data Set
 
 The project utilizes the Online Retail Data Set from the UCI Machine Learning Repository, which includes transactions (invoices) from a UK-based non-store online retail. 
