@@ -71,9 +71,11 @@ This careful examination and handling of cancellations and returns ensure that t
 - **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
 - **Invoice Total**: Calculate the total amount for each invoice to facilitate revenue analysis.
 
+<a id="1-2-exploratory-analysis"></a>
 ### 1.2 Exploratory Analysis
 This phase involved a deep dive into the dataset to understand the distribution of variables, detect outliers, and uncover patterns to inform subsequent analyses and feature engineering efforts.
 
+<a id="1-3-nlp-driven-product-categorization"></a>
 ### 1.3 NLP-Driven Product Categorization
 Implemented Natural Language Processing techniques to systematically categorize product descriptions, enhancing the granularity of product data for improved segmentation and analysis.
 
