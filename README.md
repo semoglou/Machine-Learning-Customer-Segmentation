@@ -45,14 +45,25 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 
 ### Data Preparation & Feature Engineering
 
-#### Deduplication, Missing CustomerID Removal and Data Type Conversion
+#### `Deduplication, Missing CustomerID Removal and Data Type Conversion`
 - Remove duplicate entries to ensure the uniqueness of each transaction in the dataset.
 - Entries without a 'CustomerID' are removed since they are essential for customer-specific analyses.
 - Convert data types for better compatibility with analysis tools. For instance, ensuring that dates are in datetime format and categorical data are treated as such.
 
-#### Handling Cancellations and Returns
-- **Cancellations**: Identified by 'InvoiceNo' starting with 'C', these transactions are checked against the product descriptions. Entries marked as 'Discount' but having negative quantities are treated as cancellations unless verified otherwise.
-- **Returns**: Transactions with negative quantities are examined to confirm if there is a corresponding previous transaction with a positive quantity for the same 'CustomerID' and 'StockCode'. If such a transaction exists, the negative entry is treated as a return. Otherwise, if no prior purchase is found, the transaction is considered a cancellation. Genuine returns without a recorded prior purchase are removed to maintain data accuracy.
+### `Handling Cancellations and Returns`
+The process for handling cancellations and returns is crucial to ensure data integrity and accuracy in analysis:
+
+- **Cancellations**: Identified primarily by an 'InvoiceNo' that starts with 'C'. These entries typically represent transactions that were cancelled after being initiated. However, not all cancellations directly imply errors or unwanted transactions. For example, transactions described as 'Discount' with negative quantities are automatically treated as cancellations unless further verification suggests otherwise. This categorization helps in distinguishing between genuine transaction cancellations and adjustments made for other reasons such as promotions.
+
+- **Potential Returns**: Transactions with negative quantities are scrutinized to determine if they are genuine returns:
+  - A return is considered 'potential' if there exists a corresponding transaction prior to it with a positive quantity for the same 'StockCode' and 'CustomerID'. This matching confirms that the negative transaction is likely a genuine return, as it reverses a part of a previous purchase.
+  - If no prior matching transaction is found, the negative quantity is treated as a cancellation. This distinction is important because it identifies entries that may not necessarily represent actual product returns but rather corrections or cancellations without a prior sale.
+
+- **Handling Unmatched Returns**: In cases where a negative transaction (potential return) does not match any previous positive transaction, a challenge arises in confirming whether these are genuine returns or data irregularities. For data cleanliness and to avoid analysis skew:
+  - These entries are often removed from the dataset unless additional information (e.g., customer communications or detailed transaction logs) justifies their inclusion.
+  - It's crucial to note that some of these unmatched returns might actually be legitimate returns where the original purchase was not recorded due to issues like data loss or transaction errors.
+
+This careful examination and handling of cancellations and returns ensure that the dataset used for analysis does not include misleading data, thus maintaining the reliability of the insights derived from subsequent analyses.
 
 #### Data Enhancement
 - **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
