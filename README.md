@@ -29,24 +29,33 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 
 ***
 
-## Data Preparation & Feature Engineering
+## Part I
 
-Initial data handling involved deduplication, handling missing values (specifically CustomerID), and data type conversions. Significant features like date extraction and adjusted pricing were developed to enhance model accuracy and insight depth.
+### Data Preparation & Feature Engineering
+Initial data handling involved deduplication, handling missing values, and employing complex methods to identify and exclude cancellations and returns. Feature engineering focuses on deriving new variables that could enhance the predictive models.
 
-## NLP-Driven Product Categorization via Clustering
+### Exploratory Analysis
+This phase involved a deep dive into the dataset to understand the distribution of variables, detect outliers, and uncover patterns to inform subsequent analyses and feature engineering efforts.
 
-We aim to organize a large set of product descriptions — totaling 3878 entries — into distinct categories. This is done by applying a combination of text preprocessing techniques:
-- **Text Preprocessing & Key Term Extraction**: Techniques include keyword extraction, noun identification, and price range analysis to prepare the data for effective clustering.
-- **Clustering**: Using algorithms like K-Means to categorize each description into distinct groups based on textual and contextual similarities, facilitating more efficient data management and enhancing search functionality, ultimately improving our customer segmentation efforts.
+### NLP-Driven Product Categorization
+Implemented Natural Language Processing techniques to systematically categorize product descriptions, enhancing the granularity of product data for improved segmentation and analysis.
 
-## Customer Segmentation
+***
 
-Utilized RFM scoring to quantify customer value and applied clustering techniques to segment customers into meaningful groups. This segmentation helps tailor marketing strategies to different customer segments based on their behavior and value to the business.
+## Part II
 
-## Association Rules Mining
+### RFM Analysis
+Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on their purchasing patterns, identifying key customer groups for targeted marketing strategies.
 
-Implemented the FP-Growth algorithm to efficiently find frequent itemsets and generate association rules between products. This analysis helps in identifying products that are frequently bought together, enabling effective cross-selling strategies.
+### Customer Segmentation using RFM Quantile Scores and Category Spending Patterns
+Further segmentation was refined by applying quantile scoring to RFM metrics, coupled with an analysis of spending patterns across different product categories to provide detailed insights into customer behaviors.
 
-## Product Recommendation System
+***
 
-Developed a simple and effective product recommendation system using the insights gained from association rules mining. This system suggests products to customers based on items they have previously bought, enhancing the shopping experience and increasing sales potential.
+## Part III
+
+### Association Rules Mining
+Advanced data mining techniques were used to discover frequent itemsets and robust association rules among products, providing insights into customer purchasing patterns and product associations.
+
+### Simple Recommendation System
+A straightforward recommendation system was developed, utilizing the insights from association rules mining to suggest products to customers based on their historical purchasing patterns, aiming to enhance customer satisfaction and increase sales potential.
