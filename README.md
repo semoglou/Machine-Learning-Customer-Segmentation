@@ -98,13 +98,35 @@ Our approach involves a process of text preprocessing and key term extraction to
 #### `Clustering Output`
 The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each labeled with an indicative name reflecting the thematic essence captured by the cluster:
 
-| Cluster Number | Cluster Name           |
-|----------------|------------------------|
-| 0              | Vintage Design         |
-| 1              | Classic Artistry       |
-| 2              | Urban Home & Jewellery |
-| 3              | Accessories            |
-| 4              | Holiday Essentials     |
+<div align="center">
+<table>
+  <tr>
+    <th>Cluster Number</th>
+    <th>Cluster Name</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>Vintage Design</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Classic Artistry</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Urban Home & Jewellery</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Accessories</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Holiday Essentials</td>
+  </tr>
+</table>
+</div>
+
 
 **Note:** The names assigned to each cluster are not absolute but serve as labels to facilitate easier analysis and discussion.
 
