@@ -43,6 +43,7 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 
 ## 1. Part I
 
+<a id="1-1-data-preparation--feature-engineering"></a>
 ### 1.1 Data Preparation & Feature Engineering
 
 #### `Deduplication, Missing CustomerID Removal and Data Type Conversion`
