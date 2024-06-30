@@ -142,6 +142,51 @@ Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on
 - **F (Frequency)**: Frequency measures how often a customer makes a purchase within a defined time period. A higher frequency indicates a higher engagement level and loyalty.
 - **M (Monetary Value)**: Monetary value measures how much money a customer has spent with the brand over a period of time. It helps in identifying the highest spending customers who are contributing more to the revenue.
 
+  <div align="center">
+<table>
+  <thead>
+    <tr>
+      <th>Customer Category</th>
+      <th>Average Recency</th>
+      <th>Average Frequency</th>
+      <th>Average Monetary</th>
+      <th>Customer Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>At-Risk</td>
+      <td>249.5</td>
+      <td>1.7</td>
+      <td>408.8</td>
+      <td>1019</td>
+    </tr>
+    <tr>
+      <td>Loyal Customers</td>
+      <td>30.4</td>
+      <td>9.1</td>
+      <td>3224.9</td>
+      <td>714</td>
+    </tr>
+    <tr>
+      <td>Potential Loyalists</td>
+      <td>48.1</td>
+      <td>2.9</td>
+      <td>720.2</td>
+      <td>2404</td>
+    </tr>
+    <tr>
+      <td>VIPs</td>
+      <td>10.6</td>
+      <td>25.5</td>
+      <td>5356.5</td>
+      <td>202</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 <a id="2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns"></a>
 ### 2.2 Customer Segmentation using RFM Quantile Scores and Category Spending Patterns
 Further segmentation was refined by applying quantile scoring to RFM metrics, coupled with an analysis of spending patterns across different product categories to provide detailed insights into customer behaviors.
