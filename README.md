@@ -43,7 +43,7 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 
 ## 1. Part I
 
-### 1.1 Data Preparation & Feature Engineering
+1.1 ### Data Preparation & Feature Engineering
 
 #### `Deduplication, Missing CustomerID Removal and Data Type Conversion`
 - Remove duplicate entries to ensure the uniqueness of each transaction in the dataset.
@@ -70,10 +70,10 @@ This careful examination and handling of cancellations and returns ensure that t
 - **Adjusted Prices**: Compute adjusted prices for transactions, particularly handling discounts and bulk purchases.
 - **Invoice Total**: Calculate the total amount for each invoice to facilitate revenue analysis.
 
-### 1.2 Exploratory Analysis
+1.2 ### Exploratory Analysis
 This phase involved a deep dive into the dataset to understand the distribution of variables, detect outliers, and uncover patterns to inform subsequent analyses and feature engineering efforts.
 
-### 1.3 NLP-Driven Product Categorization
+1.3 ### NLP-Driven Product Categorization
 Implemented Natural Language Processing techniques to systematically categorize product descriptions, enhancing the granularity of product data for improved segmentation and analysis.
 
 ***
