@@ -199,9 +199,7 @@ In this stage of our analysis, we further refine our customer segmentation by ap
 #### `Clustering Evaluation Methods`
 
 - **Feature Importance Analysis using Random Forest:** Trained a Random Forest on the cluster labels. This analysis helps identify which attributes are most influential in defining customer segments.
-
 - **Performance Metrics:** Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
-
 - **t-SNE Visualization:** Visualization of High-Dimensional data in two dimensions, highlighting the distribution of clusters 
 
 
