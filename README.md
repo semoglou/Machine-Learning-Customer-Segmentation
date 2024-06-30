@@ -12,11 +12,11 @@ It focuses on leveraging machine learning techniques to analyze and segment cust
    - 1.2 [Exploratory Analysis](#1-2-exploratory-analysis)
    - 1.3 [NLP-Driven Product Categorization](#1-3-nlp-driven-product-categorization)
 2. [Part II](#2-part-ii)
-   - 2.1 [RFM Analysis](#rfm-analysis)
-   - 2.2 [Customer Segmentation using RFM Quantile Scores and Category Spending Patterns](#customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns)
+   - 2.1 [RFM Analysis](#2-1-rfm-analysis)
+   - 2.2 [Customer Segmentation using RFM Quantile Scores and Category Spending Patterns](#2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns)
 3. [Part III](#3-part-iii)
-   - 3.1 [Association Rules Mining](#association-rules-mining)
-   - 3.2 [Simple Recommendation System](#simple-recommendation-system)
+   - 3.1 [Association Rules Mining](#3-1-association-rules-mining)
+   - 3.2 [Simple Recommendation System](#3-2-simple-recommendation-system)
   
 ***
 
@@ -83,18 +83,22 @@ Implemented Natural Language Processing techniques to systematically categorize 
 
 ## 2. Part II
 
-### RFM Analysis
+<a id="2-1-rfm-analysis"></a>
+### 2.1 RFM Analysis
 Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on their purchasing patterns, identifying key customer groups for targeted marketing strategies.
 
-### Customer Segmentation using RFM Quantile Scores and Category Spending Patterns
+<a id="2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns"></a>
+### 2.2 Customer Segmentation using RFM Quantile Scores and Category Spending Patterns
 Further segmentation was refined by applying quantile scoring to RFM metrics, coupled with an analysis of spending patterns across different product categories to provide detailed insights into customer behaviors.
 
 ***
 
 ## 3. Part III
 
-### Association Rules Mining
+<a id="3-1-association-rules-mining"></a>
+### 3.1 Association Rules Mining
 Advanced data mining techniques were used to discover frequent itemsets and robust association rules among products, providing insights into customer purchasing patterns and product associations.
 
-### Simple Recommendation System
+<a id="3-2-simple-recommendation-system"></a>
+### 3.2 Simple Recommendation System
 A straightforward recommendation system was developed, utilizing the insights from association rules mining to suggest products to customers based on their historical purchasing patterns, aiming to enhance customer satisfaction and increase sales potential.
