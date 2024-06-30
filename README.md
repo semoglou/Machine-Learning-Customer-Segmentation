@@ -14,20 +14,17 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 
 ***
 
-## Overview
-
-### Part I
-- **Data Preparation & Feature Engineering**
--  **Exploratory Analysis**
--  **NLP-Driven Product Categorization**
-
-### Part II
-- **RFM Analysis**
-- **Customer Segmentation using RFM Quantile Scores and Category Spending Patterns**
-
-### Part III
-- **Association Rules Mining** 
-- **Simple Recommendation System**
+## Table of Contents
+- [Part I: Data Preparation and Analysis](#part-i-data-preparation-and-analysis)
+  - [Data Preparation & Feature Engineering](#data-preparation--feature-engineering)
+  - [Exploratory Analysis](#exploratory-analysis)
+  - [NLP-Driven Product Categorization](#nlp-driven-product-categorization)
+- [Part II: Customer Segmentation](#part-ii-customer-segmentation)
+  - [RFM Analysis](#rfm-analysis)
+  - [Customer Segmentation using RFM Quantile Scores and Category Spending Patterns](#customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns)
+- [Part III: Predictive Analytics and Recommendations](#part-iii-predictive-analytics-and-recommendations)
+  - [Association Rules Mining](#association-rules-mining)
+  - [Simple Recommendation System](#simple-recommendation-system)
 
 ***
 
