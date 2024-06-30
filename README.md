@@ -82,9 +82,9 @@ Organized a vast array of product descriptions, amounting to 3,878 entries, into
 Our approach involves a process of text preprocessing and key term extraction to prepare the data for robust clustering:
 
 #### `Text Preprocessing & Key Term Extraction`
-- **Identifying Key Parts of Speech**: We specifically target nouns in product descriptions as they often indicate key features or elements. This process involves labeling each word according to its part of speech.
-- **Condensing Words to Their Roots**: Applying stemming techniques, we reduce words to their root forms. This normalization allows us to aggregate similar terms across different descriptions, enhancing consistency.
-- **Extracting and Counting Terms**: From the stemmed nouns, we compile a frequency map to gauge the significance of each term within the corpus. This includes counting occurrences and noting variations.
+- **Identifying Key Parts of Speech**: We specifically target nouns in product descriptions as they often indicate key features or elements.
+- **Condensing Words to Their Roots**: Applying stemming techniques, we reduce words to their root forms.
+- **Extracting and Counting Terms**: From the stemmed nouns, we compile a frequency map to measure the significance of each term within the set of texts.
 - **Selecting Representative Terms**: For groups of words sharing the same root, we choose the shortest term as the representative for simplicity and clarity.
   
 #### `Keyword Filtering Strategy`
