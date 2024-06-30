@@ -14,7 +14,7 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 
 ### Objectives
 
-- #### Part I (`part_1.ipynb`)
+- #### Part I     (`part_1.ipynb`)
   - **Data Preparation & Feature Engineering**
   - **NLP-Driven Product Categorization via Clustering**
 - #### Part II (part_2.ipynb)
