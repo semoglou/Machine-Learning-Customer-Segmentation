@@ -36,7 +36,7 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 | Quantity      | Feature    | Integer      | The quantities of each product (item) per transaction.              |
 | InvoiceDate   | Feature    | Date         | The day and time when each transaction was generated.               |
 | UnitPrice     | Feature    | Continuous   | Product price per unit.                                            |
-| CustomerID    | Feature    | Categorical  | A 5-digit integral number uniquely assigned to each customer.       |
+| CustomerID    | ID         | Categorical  | A 5-digit integral number uniquely assigned to each customer.       |
 | Country       | Feature    | Categorical  | The name of the country where each customer resides.                |
 
 ***
