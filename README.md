@@ -29,16 +29,16 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 
 **Variables Table**
 
-| Variable Name | Role       | Type         | Description                                                        | Units    | Missing Values |
-|---------------|------------|--------------|--------------------------------------------------------------------|----------|----------------|
-| InvoiceNo     | ID         | Categorical  | A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation. |          | No             |
-| StockCode     | ID         | Categorical  | A 5-digit integral number uniquely assigned to each distinct product. |          | No             |
-| Description   | Feature    | Categorical  | Product name.                                                      |          | No             |
-| Quantity      | Feature    | Integer      | The quantities of each product (item) per transaction.              |          | No             |
-| InvoiceDate   | Feature    | Date         | The day and time when each transaction was generated.               |          | No             |
-| UnitPrice     | Feature    | Continuous   | Product price per unit.                                            | Sterling | No             |
-| CustomerID    | Feature    | Categorical  | A 5-digit integral number uniquely assigned to each customer.       |          | No             |
-| Country       | Feature    | Categorical  | The name of the country where each customer resides.                |          | No             |
+| Variable Name | Role       | Type         | Description                                                        |
+|---------------|------------|--------------|--------------------------------------------------------------------|
+| InvoiceNo     | ID         | Categorical  | A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation. |
+| StockCode     | ID         | Categorical  | A 5-digit integral number uniquely assigned to each distinct product. |
+| Description   | Feature    | Categorical  | Product name.                                                      |
+| Quantity      | Feature    | Integer      | The quantities of each product (item) per transaction.              |
+| InvoiceDate   | Feature    | Date         | The day and time when each transaction was generated.               |
+| UnitPrice     | Feature    | Continuous   | Product price per unit.                                            |
+| CustomerID    | Feature    | Categorical  | A 5-digit integral number uniquely assigned to each customer.       |
+| Country       | Feature    | Categorical  | The name of the country where each customer resides.                |
 
 ***
 
