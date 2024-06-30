@@ -115,7 +115,10 @@ The data matrix, comprising rows of individual products and columns of features 
 
 <a id="2-1-rfm-analysis"></a>
 ### 2.1 RFM Analysis
-Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on their purchasing patterns, identifying key customer groups for targeted marketing strategies.
+Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on their purchasing patterns, identifying key customer groups.
+- **R (Recency)**: Recency measures how recently a customer made a purchase. This metric helps to identify customers who have engaged with the brand recently, under the assumption that the more recent the purchase, the more likely the customer will remain engaged.
+- **F (Frequency)**: Frequency measures how often a customer makes a purchase within a defined time period. A higher frequency indicates a higher engagement level and loyalty.
+- **M (Monetary Value)**: Monetary value measures how much money a customer has spent with the brand over a period of time. It helps in identifying the highest spending customers who are contributing more to the revenue.
 
 <a id="2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns"></a>
 ### 2.2 Customer Segmentation using RFM Quantile Scores and Category Spending Patterns
