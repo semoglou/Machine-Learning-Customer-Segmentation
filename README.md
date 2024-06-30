@@ -69,7 +69,6 @@ This careful examination and handling of cancellations and returns ensure that t
 
 #### `Data Enhancement`
 - **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
-- **Adjusted Prices**: Compute adjusted prices for transactions, particularly handling discounts and bulk purchases.
 - **Invoice Total**: Calculate the total amount for each invoice to facilitate revenue analysis.
 
 ### 1.2 Exploratory Analysis
