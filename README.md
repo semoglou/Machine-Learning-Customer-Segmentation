@@ -3,6 +3,8 @@
 This repository contains the Machine Learning Customer Segmentation Project, which is part of my MSc Business Mathematics. 
 It focuses on leveraging machine learning techniques to analyze and segment customers based on their purchasing behaviors from the Online Retail Data Set available at the UCI Machine Learning Repository.
 
+***
+
 ### The Data Set
 
 The project utilizes the Online Retail Data Set from the UCI Machine Learning Repository, which includes transactions (invoices) from a UK-based non-store online retail. 
@@ -15,13 +17,17 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 ## Overview
 
 ### Part I
-**Data Preparation & Feature Engineering, Exploratory Analysis and NLP-Driven Categorization**
+- **Data Preparation & Feature Engineering**
+-  **Exploratory Analysis**
+-  **NLP-Driven Product Categorization**
 
 ### Part II
-**RFM Analysis, Customer Segmentation using RFM Quantile Scores and Category Spending Patterns**
+- **RFM Analysis**
+- **Customer Segmentation using RFM Quantile Scores and Category Spending Patterns**
 
 ### Part III
-**Association Rules Mining & Simple Recommendation System**
+-**Association Rules Mining** 
+-**Simple Recommendation System**
 
 ***
 
