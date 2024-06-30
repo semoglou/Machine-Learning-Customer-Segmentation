@@ -50,7 +50,7 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 - Entries without a 'CustomerID' are removed since they are essential for customer-specific analyses.
 - Convert data types for better compatibility with analysis tools. For instance, ensuring that dates are in datetime format and categorical data are treated as such.
 
-### `Handling Cancellations and Returns`
+#### `Handling Cancellations and Returns`
 The process for handling cancellations and returns is crucial to ensure data integrity and accuracy in analysis:
 
 - **Cancellations**: Identified primarily by an 'InvoiceNo' that starts with 'C'. These entries typically represent transactions that were cancelled after being initiated. However, not all cancellations directly imply errors or unwanted transactions. For example, transactions described as 'Discount' with negative quantities are automatically treated as cancellations unless further verification suggests otherwise. This categorization helps in distinguishing between genuine transaction cancellations and adjustments made for other reasons such as promotions.
@@ -65,7 +65,7 @@ The process for handling cancellations and returns is crucial to ensure data int
 
 This careful examination and handling of cancellations and returns ensure that the dataset used for analysis does not include misleading data, thus maintaining the reliability of the insights derived from subsequent analyses.
 
-#### Data Enhancement
+#### `Data Enhancement`
 - **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
 - **Adjusted Prices**: Compute adjusted prices for transactions, particularly handling discounts and bulk purchases.
 - **Invoice Total**: Calculate the total amount for each invoice to facilitate revenue analysis.
