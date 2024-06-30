@@ -6,7 +6,7 @@ It focuses on leveraging machine learning techniques to analyze and segment cust
 ***
 
 ## Table of Contents
- [The Data Set](#the-data-set)
+   [The Data Set](#the-data-set)
 1. [Part I](#part-i)
    - [Data Preparation & Feature Engineering](#data-preparation--feature-engineering)
    - [Exploratory Analysis](#exploratory-analysis)
