@@ -49,7 +49,7 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 
 #### `Deduplication, Missing CustomerID Removal and Data Type Conversion`
 - Remove duplicate entries to ensure the uniqueness of each transaction in the dataset.
-- Entries without a 'CustomerID' are removed since they are essential for customer-specific analyses.
+- Entries without a 'CustomerID' are removed since IDs are essential for customer-specific analyses.
 - Convert data types for better compatibility with analysis tools. For instance, ensuring that dates are in datetime format and categorical data are treated as such.
 
 #### `Handling Cancellations and Returns`
