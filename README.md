@@ -32,10 +32,10 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 |---------------|------------|--------------|--------------------------------------------------------------------|
 | InvoiceNo     | ID         | Categorical  | A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation or a reversal. |
 | StockCode     | ID         | Categorical  | A 5-digit integral number uniquely assigned to each distinct product. |
-| Description   | Feature    | Categorical  | Product name.                                                      |
+| Description   | Feature    | Categorical  | Product name.                                                       |
 | Quantity      | Feature    | Integer      | The quantities of each product (item) per transaction.              |
 | InvoiceDate   | Feature    | Date         | The day and time when each transaction was generated.               |
-| UnitPrice     | Feature    | Continuous   | Product price per unit.                                            |
+| UnitPrice     | Feature    | Continuous   | Product price per unit.                                             |
 | CustomerID    | ID         | Categorical  | A 5-digit integral number uniquely assigned to each customer.       |
 | Country       | Feature    | Categorical  | The name of the country where each customer resides.                |
 
@@ -86,14 +86,28 @@ Our approach involves a process of text preprocessing and key term extraction to
 - **Condensing Words to Their Roots**: Applying stemming techniques, we reduce words to their root forms. This normalization allows us to aggregate similar terms across different descriptions, enhancing consistency.
 - **Extracting and Counting Terms**: From the stemmed nouns, we compile a frequency map to gauge the significance of each term within the corpus. This includes counting occurrences and noting variations.
 - **Selecting Representative Terms**: For groups of words sharing the same root, we choose the shortest term as the representative for simplicity and clarity.
+  
 #### `Keyword Filtering Strategy`
 - **Exclusion Criteria**: We filter out terms based on their commonality, rarity, and informativeness. Only terms that contribute meaningfully to product differentiation are retained.
 - **Threshold Settings**: We implement a word length threshold to ensure focus on substantial terms, excluding words with non-contributive characters like '+' or '/'.
+  
 #### `Constructing a Data Matrix for Clustering`
 - **Binary Variable Transformation**: Each qualifying keyword is converted into a binary variable for each product description, indicating the presence or absence of that keyword.
 - **Integration of Price Range Data**: By including price segmentation, we add an economic dimension to the clustering process, aligning it with both qualitative and quantitative attributes.
+  
 #### `Clustering Output`
-The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each representing a distinct category of products
+The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each labeled with an indicative name reflecting the thematic essence captured by the cluster:
+
+| Cluster Number | Cluster Name           |
+|----------------|------------------------|
+| 0              | Vintage Design         |
+| 1              | Classic Artistry       |
+| 2              | Urban Home & Jewellery |
+| 3              | Accessories            |
+| 4              | Holiday Essentials     |
+
+**Note:** The names assigned to each cluster are not absolute but serve as labels to facilitate easier analysis and discussion.
+
 ***
 
 ## 2. Part II
