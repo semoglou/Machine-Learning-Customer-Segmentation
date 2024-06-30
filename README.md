@@ -29,7 +29,7 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 
 ***
 
-## Part I
+## 1. Part I
 
 ### Data Preparation & Feature Engineering
 Initial data handling involved deduplication, handling missing values, and employing complex methods to identify and exclude cancellations and returns. Feature engineering focuses on deriving new variables that could enhance the predictive models.
@@ -42,7 +42,7 @@ Implemented Natural Language Processing techniques to systematically categorize 
 
 ***
 
-## Part II
+## 2. Part II
 
 ### RFM Analysis
 Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on their purchasing patterns, identifying key customer groups for targeted marketing strategies.
@@ -52,7 +52,7 @@ Further segmentation was refined by applying quantile scoring to RFM metrics, co
 
 ***
 
-## Part III
+## 3. Part III
 
 ### Association Rules Mining
 Advanced data mining techniques were used to discover frequent itemsets and robust association rules among products, providing insights into customer purchasing patterns and product associations.
