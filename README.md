@@ -42,6 +42,7 @@ The project utilizes the Online Retail Data Set from the UCI Machine Learning Re
 ***
 
 ## 1. Part I
+[View Part I Notebook](https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/Part_1/part_1.ipynb)
 
 <a id="1-1-data-preparation--feature-engineering"></a>
 ### 1.1 Data Preparation & Feature Engineering
