@@ -196,6 +196,15 @@ In this stage of our analysis, we further refine our customer segmentation by ap
 - **"Dominant" Category per Customer:** The 'Dominant' Category for each customer is determined by identifying which product category has the highest total spending or transaction count for that customer.
 - **Recency, Frequency & Monetary Scores (0-99) using Quantiles:** Each customer receives a score from 0 to 99 for each RFM metric based on their quantile rank. These scores standardize the RFM metrics to other percentage-based measures, improving the integration and comparability of analyses.
 
+#### `Clustering Evaluation Methods`
+
+- **Feature Importance Analysis using Random Forest:** Trained a Random Forest on the cluster labels. This analysis helps identify which attributes are most influential in defining customer segments.
+
+- **Performance Metrics:** Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
+
+- **t-SNE Visualization:** Visualization of High-Dimensional data in two dimensions, highlighting the distribution of clusters 
+
+
 ***
 
 ## 3. Part III
