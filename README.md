@@ -31,7 +31,7 @@ The dataset spans from December 2010 to December 2011 and includes a variety of 
 
 | Variable Name | Role       | Type         | Description                                                        |
 |---------------|------------|--------------|--------------------------------------------------------------------|
-| InvoiceNo     | ID         | Categorical  | A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation. |
+| InvoiceNo     | ID         | Categorical  | A 6-digit integral number uniquely assigned to each transaction. If this code starts with the letter 'c', it indicates a cancellation or a reversal. |
 | StockCode     | ID         | Categorical  | A 5-digit integral number uniquely assigned to each distinct product. |
 | Description   | Feature    | Categorical  | Product name.                                                      |
 | Quantity      | Feature    | Integer      | The quantities of each product (item) per transaction.              |
