@@ -59,20 +59,27 @@ Negative 'quantity' transactions are considered potential returns if there exist
 If no corresponding positive transaction exists before the negative one, it is treated as a cancellation. It is important to note that some cancellations might be genuine returns without a recorded prior purchase. For such cancellations, we remove these entries from the dataset to correct the data and avoid skewing our analysis.
 
 #### `Data Enhancement`
-- **Date Features**: Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
-- **Invoice Total**: Calculate the total amount for each invoice to facilitate revenue analysis.
+- **Date Features**\
+   Extract additional features from 'InvoiceDate' such as day of the week, month, and hour to uncover patterns related to time.
+- **Invoice Total**\
+   Calculate the total amount for each invoice to facilitate revenue analysis.
 
 <a id="1-2-exploratory-analysis"></a>
 ### 1.2 Exploratory Analysis
 This phase involved a deep dive into the dataset to understand the distribution of variables.
+
 #### `Key Areas of Focus`
-- **Sales Distribution by Time**: Analyzed sales data to uncover trends across different timescales—hourly, daily, and monthly. This helps in understanding peak shopping hours, busiest shopping days, and seasonal trends which are essential for inventory and marketing strategies.
+- **Sales Distribution by Time**\
+   Analyzed sales data to uncover trends across different timescales—hourly, daily, and monthly. This helps in understanding peak shopping hours, busiest shopping days, and seasonal trends which are essential for inventory and marketing strategies.
   
-- **Customer Demographics**: Explored demographic data, enhancing the understanding of our customer base.
+- **Customer Demographics**\
+   Explored demographic data, enhancing the understanding of our customer base.
 
-- **Revenue by Country**: Mapped out revenue generation across different countries to pinpoint high-value markets and assess the global reach of the business.
+- **Revenue by Country**\
+   Mapped out revenue generation across different countries to pinpoint high-value markets and assess the global reach of the business.
 
-- **Product Popularity**: Investigated the most frequently purchased items by analyzing the 'Description' field.
+- **Product Popularity**\
+   Investigated the most frequently purchased items by analyzing the 'Description' field.
 
 <a id="1-3-nlp-driven-product-categorization"></a>
 ### 1.3 NLP-Driven Product Categorization
@@ -202,7 +209,7 @@ In this stage of our analysis, we further refine our customer segmentation by ap
 - **Performance Metrics:** Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
 - **t-SNE Visualization:** Visualization of High-Dimensional data in two dimensions, highlighting the distribution of clusters 
 
-### `Clustering Techniques Applied`
+#### `Clustering Techniques Applied`
 
 Following the evaluation of feature importance and performance metrics, we adopted a multi-step clustering approach to optimize our segmentation strategy. This involved the sequential application of different clustering algorithms to refine our clusters and improve the granularity of our customer segmentation.
 
