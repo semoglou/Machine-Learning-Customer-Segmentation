@@ -69,16 +69,16 @@ If no corresponding positive transaction exists before the negative one, it is t
 This phase involved a deep dive into the dataset to understand the distribution of variables.
 
 #### `Key Areas of Focus`
-- **Sales Distribution by Time**\
+- **Sales Distribution by Time** \
    Analyzed sales data to uncover trends across different timescales—hourly, daily, and monthly. This helps in understanding peak shopping hours, busiest shopping days, and seasonal trends which are essential for inventory and marketing strategies.
   
-- **Customer Demographics**\
+- **Customer Demographics** \
    Explored demographic data, enhancing the understanding of our customer base.
 
-- **Revenue by Country**\
+- **Revenue by Country** \
    Mapped out revenue generation across different countries to pinpoint high-value markets and assess the global reach of the business.
 
-- **Product Popularity**\
+- **Product Popularity** \
    Investigated the most frequently purchased items by analyzing the 'Description' field.
 
 <a id="1-3-nlp-driven-product-categorization"></a>
@@ -89,18 +89,26 @@ Organized a vast array of product descriptions, amounting to 3,878 entries, into
 Our approach involves a process of text preprocessing and key term extraction to prepare the data for robust clustering:
 
 #### `Text Preprocessing & Key Term Extraction`
-- **Identifying Key Parts of Speech**: We specifically target nouns in product descriptions as they often indicate key features or elements.
-- **Condensing Words to Their Roots**: Applying stemming techniques, we reduce words to their root forms.
-- **Extracting and Counting Terms**: From the stemmed nouns, we compile a frequency map to measure the significance of each term within the set of texts.
-- **Selecting Representative Terms**: For groups of words sharing the same root, we choose the shortest term as the representative for simplicity and clarity.
+- **Identifying Key Parts of Speech** \
+   We specifically target nouns in product descriptions as they often indicate key features or elements.
+- **Condensing Words to Their Roots** \
+   Applying stemming techniques, we reduce words to their root forms.
+- **Extracting and Counting Terms** \
+   From the stemmed nouns, we compile a frequency map to measure the significance of each term within the set of texts.
+- **Selecting Representative Terms** \
+   For groups of words sharing the same root, we choose the shortest term as the representative for simplicity and clarity.
   
 #### `Keyword Filtering Strategy`
-- **Exclusion Criteria**: We filter out terms based on their commonality, rarity, and informativeness. Only terms that contribute meaningfully to product differentiation are retained.
-- **Threshold Settings**: We implement a word length threshold to ensure focus on substantial terms, excluding words with non-contributive characters like '+' or '/'.
+- **Exclusion Criteria** \
+   We filter out terms based on their commonality, rarity, and informativeness. Only terms that contribute meaningfully to product differentiation are retained.
+- **Threshold Settings** \
+   We implement a word length threshold to ensure focus on substantial terms, excluding words with non-contributive characters like '+' or '/'.
   
 #### `Constructing a Data Matrix for Clustering`
-- **Binary Variable Transformation**: Each qualifying keyword is converted into a binary variable for each product description, indicating the presence or absence of that keyword.
-- **Integration of Price Range Data**: By including price segmentation, we add an economic dimension to the clustering process, aligning it with both qualitative and quantitative attributes.
+- **Binary Variable Transformation** \
+   Each qualifying keyword is converted into a binary variable for each product description, indicating the presence or absence of that keyword.
+- **Integration of Price Range Data** \
+   By including price segmentation, we add an economic dimension to the clustering process, aligning it with both qualitative and quantitative attributes.
   
 #### `Clustering Output`
 The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each labeled with an indicative name reflecting the thematic essence captured by the cluster:
@@ -145,9 +153,12 @@ The data matrix, comprising rows of individual products and columns of features 
 <a id="2-1-rfm-analysis"></a>
 ### 2.1 RFM Analysis
 Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on their purchasing patterns, identifying key customer groups.
-- **R (Recency)**: Recency measures how recently a customer made a purchase. This metric helps to identify customers who have engaged with the brand recently, under the assumption that the more recent the purchase, the more likely the customer will remain engaged.
-- **F (Frequency)**: Frequency measures how often a customer makes a purchase within a defined time period. A higher frequency indicates a higher engagement level and loyalty.
-- **M (Monetary Value)**: Monetary value measures how much money a customer has spent with the brand over a period of time. It helps in identifying the highest spending customers who are contributing more to the revenue.
+- **R (Recency)** \
+      Recency measures how recently a customer made a purchase. This metric helps to identify customers who have engaged with the brand recently, under the assumption that the more recent the purchase, the more likely the customer will remain engaged.
+- **F (Frequency)** \
+      Frequency measures how often a customer makes a purchase within a defined time period. A higher frequency indicates a higher engagement level and loyalty.
+- **M (Monetary Value)** \
+      Monetary value measures how much money a customer has spent with the brand over a period of time. It helps in identifying the highest spending customers who are contributing more to the revenue.
 
 <div align="center">
 <table>
@@ -199,30 +210,36 @@ Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on
 In this stage of our analysis, we further refine our customer segmentation by applying quantile scoring to the RFM metrics and analyzing spending patterns across various product categories. This dual approach allows us to gain a more nuanced understanding of customer behaviors and preferences.
 
 #### `Features`
-- **Revenue Percentage per Category per Customer:** We calculate the revenue percentage for each product category per customer by dividing the revenue generated by a customer in a specific category by their total spending across all categories. This metric is expressed as a percentage, highlighting the proportion of total spending dedicated to each category.
-- **"Dominant" Category per Customer:** The 'Dominant' Category for each customer is determined by identifying which product category has the highest total spending or transaction count for that customer.
-- **Recency, Frequency & Monetary Scores (0-99) using Quantiles:** Each customer receives a score from 0 to 99 for each RFM metric based on their quantile rank. These scores standardize the RFM metrics to other percentage-based measures, improving the integration and comparability of analyses.
+- **Revenue Percentage per Category per Customer** \
+   We calculate the revenue percentage for each product category per customer by dividing the revenue generated by a customer in a specific category by their total spending across all categories. This metric is expressed as a percentage, highlighting the proportion of total spending dedicated to each category.
+- **"Dominant" Category per Customer** \
+   The 'Dominant' Category for each customer is determined by identifying which product category has the highest total spending or transaction count for that customer.
+- **Recency, Frequency & Monetary Scores (0-99) using Quantiles** \
+   Each customer receives a score from 0 to 99 for each RFM metric based on their quantile rank. These scores standardize the RFM metrics to other percentage-based measures, improving the integration and comparability of analyses.
 
 #### `Clustering Evaluation Methods`
 
-- **Feature Importance Analysis using Random Forest:** Trained a Random Forest on the cluster labels. This analysis helps identify which attributes are most influential in defining customer segments.
-- **Performance Metrics:** Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
-- **t-SNE Visualization:** Visualization of High-Dimensional data in two dimensions, highlighting the distribution of clusters 
+- **Feature Importance Analysis using Random Forest** \
+     Trained a Random Forest on the cluster labels. This analysis helps identify which attributes are most influential in defining customer segments.
+- **Performance Metrics** \
+     Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
+- **t-SNE Visualization** \
+     Visualization of High-Dimensional data in two dimensions, highlighting the distribution of clusters 
 
 #### `Clustering Techniques Applied`
 
 Following the evaluation of feature importance and performance metrics, we adopted a multi-step clustering approach to optimize our segmentation strategy. This involved the sequential application of different clustering algorithms to refine our clusters and improve the granularity of our customer segmentation.
 
 - **K-Means Clustering** \
-Initially, we applied the K-Means clustering algorithm to establish a baseline for segmentation. K-Means was chosen for its efficiency and effectiveness in grouping large data sets into k distinct clusters based on attribute similarity.
+   Initially, we applied the K-Means clustering algorithm to establish a baseline for segmentation. K-Means was chosen for its efficiency and effectiveness in grouping large data sets into k distinct clusters based on attribute similarity.
 
 - **Hierarchical Clustering**\
-To further refine our cluster definitions and potentially identify a more optimal number of clusters, we then employed Hierarchical Clustering. This method allowed us to visualize and assess different cluster possibilities through a dendrogram, providing insight into how data points are grouped at various levels of granularity.
+   To further refine our cluster definitions and potentially identify a more optimal number of clusters, we then employed Hierarchical Clustering. This method allowed us to visualize and assess different cluster possibilities through a dendrogram, providing insight into how data points are grouped at various levels of granularity.
 
 - **Revised K-Means Clustering** \
-Based on the insights gained from Hierarchical Clustering, specifically the number of clusters suggested by the dendrogram, we performed a second round of K-Means clustering. This time, we used the cluster count obtained from the hierarchical method as the input for 'k'. This refined approach allowed us to fine-tune our segmentation, leading to more distinct and actionable customer groups.
+   Based on the insights gained from Hierarchical Clustering, specifically the number of clusters suggested by the dendrogram, we performed a second round of K-Means clustering. This time, we used the cluster count obtained from the hierarchical method as the input for 'k'. This refined approach allowed us to fine-tune our segmentation, leading to more distinct and actionable customer groups.
 
-This iterative clustering strategy — starting with K-Means, refining with Hierarchical Clustering, and concluding with a revised K-Means — proved to be highly effective. It enabled us to leverage the strengths of both methods: the computational efficiency of K-Means and the detailed insight provided by Hierarchical Clustering. The final iteration of K-Means, using the informed choice of 'k', yielded the most meaningful and practical customer segments.
+  This iterative clustering strategy — starting with K-Means, refining with Hierarchical Clustering, and concluding with a revised K-Means — proved to be highly effective. It enabled us to leverage the strengths of both methods: the computational efficiency of K-Means and the detailed insight provided by Hierarchical Clustering. The final iteration of K-Means, using the informed choice of 'k', yielded the most meaningful and practical customer segments.
 
 
 ***
