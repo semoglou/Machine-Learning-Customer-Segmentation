@@ -243,8 +243,6 @@ This iterative clustering strategy — starting with K-Means, refining with Hier
 
 Below is a breakdown of our customer segmentation analysis, showcasing the distribution of average percentage spending per category, average dominant category indicators, and average RFM scores for each defined customer segment:
 
-<div align="center">
-
 | Customer Segment                             | % Accessories | % Classic Artistry | % Holiday Essentials | % Urban Home & Jewellery | % Vintage Design | Dominant Accessories | Dominant Classic Artistry | Dominant Holiday Essentials | Dominant Urban Home & Jewellery | Dominant Vintage Design | Recency Score | Frequency Score | Monetary Score | Number of Customers |
 |----------------------------------------------|---------------|--------------------|----------------------|--------------------------|------------------|----------------------|---------------------------|-----------------------------|--------------------------------|------------------------|---------------|-----------------|----------------|---------------------|
 | Active Urban Home & Jewellery Enthusiasts    | 14.93         | 16.67              | 9.15                 | 43.54                    | 15.72            | 0.0                  | 0.0                       | 0.0                         | 1.0                            | 0.0                    | 51.78         | 47.07           | 46.82          | 554                 |
@@ -255,8 +253,6 @@ Below is a breakdown of our customer segmentation analysis, showcasing the distr
 | Premium Vintage Design Lovers                | 14.70         | 21.52              | 10.52                | 14.48                    | 38.78            | 0.0                  | 0.0                       | 0.0                         | 0.0                            | 1.0                    | 70.68         | 76.25           | 76.77          | 455                 |
 | Understated Classic Artistry Enthusiasts     | 11.16         | 50.08              | 13.13                | 10.46                    | 15.17            | 0.0                  | 1.0                       | 0.0                         | 0.0                            | 0.0                    | 33.59         | 26.80           | 29.05          | 635                 |
 | Valued Classic Artistry Connoisseurs         | 13.87         | 37.18              | 15.01                | 15.43                    | 18.51            | 0.0                  | 1.0                       | 0.0                         | 0.0                            | 0.0                    | 66.64         | 71.89           | 71.95          | 722                 |
-
-</div>
 
 ***
 
@@ -295,9 +291,12 @@ A straightforward recommendation system was developed, utilizing the insights fr
 
 #### `"Because you liked this item" Recommendations Overview`
 
+<div align="center">
+
 | Products in Basket         | Recommendations |
 |----------------------------|-----------------|
 | **JAM MAKING SET WITH JARS** | **JAM MAKING SET PRINTED**<br>Confidence (Probability): 32.25%, Lift: 8<br>**SET OF 3 CAKE TINS PANTRY DESIGN**<br>Confidence: 25.75%, Lift: 4.5<br>**RECIPE BOX PANTRY YELLOW DESIGN**<br>Confidence: 20.29%, Lift: 5<br>**SET OF 4 PANTRY JELLY MOULDS**<br>Confidence: 19.45%, Lift: 5 |
 | **RED KITCHEN SCALES**       | **IVORY KITCHEN SCALES**<br>Confidence (Probability): 58%, Lift: 20<br>**MINT KITCHEN SCALES**<br>Confidence: 26.62%, Lift: 18 |
 | **HAND WARMER OWL DESIGN**   | **HAND WARMER RED LOVE HEART**<br>Confidence (Probability): 48%, Lift: 20 |
 
+</div>
