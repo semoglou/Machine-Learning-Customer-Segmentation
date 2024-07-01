@@ -239,7 +239,7 @@ Following the evaluation of feature importance and performance metrics, we adopt
 - **Revised K-Means Clustering** \
    Based on the insights gained from Hierarchical Clustering, specifically the number of clusters suggested by the dendrogram, we performed a second round of K-Means clustering. This time, we used the cluster count obtained from the hierarchical method as the input for 'k'. This refined approach allowed us to fine-tune our segmentation, leading to more distinct and actionable customer groups.
 
-  This iterative clustering strategy — starting with K-Means, refining with Hierarchical Clustering, and concluding with a revised K-Means — proved to be highly effective. It enabled us to leverage the strengths of both methods: the computational efficiency of K-Means and the detailed insight provided by Hierarchical Clustering. The final iteration of K-Means, using the informed choice of 'k', yielded the most meaningful and practical customer segments.
+This iterative clustering strategy — starting with K-Means, refining with Hierarchical Clustering, and concluding with a revised K-Means — proved to be highly effective. It enabled us to leverage the strengths of both methods: the computational efficiency of K-Means and the detailed insight provided by Hierarchical Clustering. The final iteration of K-Means, using the informed choice of 'k', yielded the most meaningful and practical customer segments.
 
 
 ***
