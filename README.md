@@ -291,8 +291,6 @@ A straightforward recommendation system was developed, utilizing the insights fr
 
 #### `"Because you liked this item" Recommendations Overview`
 
-#### `"Because you liked this item" Recommendations Overview`
-
 <div align="center">
 
 <table>
@@ -308,10 +306,13 @@ A straightforward recommendation system was developed, utilizing the insights fr
 <td>
 <strong>JAM MAKING SET PRINTED</strong><br>
 Confidence (Probability): 32.25%, Lift: 8<br>
+<hr>
 <strong>SET OF 3 CAKE TINS PANTRY DESIGN</strong><br>
 Confidence: 25.75%, Lift: 4.5<br>
+<hr>
 <strong>RECIPE BOX PANTRY YELLOW DESIGN</strong><br>
 Confidence: 20.29%, Lift: 5<br>
+<hr>
 <strong>SET OF 4 PANTRY JELLY MOULDS</strong><br>
 Confidence: 19.45%, Lift: 5
 </td>
@@ -321,6 +322,7 @@ Confidence: 19.45%, Lift: 5
 <td>
 <strong>IVORY KITCHEN SCALES</strong><br>
 Confidence (Probability): 58%, Lift: 20<br>
+<hr>
 <strong>MINT KITCHEN SCALES</strong><br>
 Confidence: 26.62%, Lift: 18
 </td>
