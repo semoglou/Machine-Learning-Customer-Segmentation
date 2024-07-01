@@ -291,12 +291,49 @@ A straightforward recommendation system was developed, utilizing the insights fr
 
 #### `"Because you liked this item" Recommendations Overview`
 
+#### `"Because you liked this item" Recommendations Overview`
+
 <div align="center">
 
-| Products in Basket         | Recommendations |
-|----------------------------|-----------------|
-| **JAM MAKING SET WITH JARS** | **JAM MAKING SET PRINTED**<br>Confidence (Probability): 32.25%, Lift: 8<br>**SET OF 3 CAKE TINS PANTRY DESIGN**<br>Confidence: 25.75%, Lift: 4.5<br>**RECIPE BOX PANTRY YELLOW DESIGN**<br>Confidence: 20.29%, Lift: 5<br>**SET OF 4 PANTRY JELLY MOULDS**<br>Confidence: 19.45%, Lift: 5 |
-| **RED KITCHEN SCALES**       | **IVORY KITCHEN SCALES**<br>Confidence (Probability): 58%, Lift: 20<br>**MINT KITCHEN SCALES**<br>Confidence: 26.62%, Lift: 18 |
-| **HAND WARMER OWL DESIGN**   | **HAND WARMER RED LOVE HEART**<br>Confidence (Probability): 48%, Lift: 20 |
+<table>
+<thead>
+<tr>
+<th>Products in Basket</th>
+<th>Recommendations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JAM MAKING SET WITH JARS</strong></td>
+<td>
+<strong>JAM MAKING SET PRINTED</strong><br>
+Confidence (Probability): 32.25%, Lift: 8<br>
+<strong>SET OF 3 CAKE TINS PANTRY DESIGN</strong><br>
+Confidence: 25.75%, Lift: 4.5<br>
+<strong>RECIPE BOX PANTRY YELLOW DESIGN</strong><br>
+Confidence: 20.29%, Lift: 5<br>
+<strong>SET OF 4 PANTRY JELLY MOULDS</strong><br>
+Confidence: 19.45%, Lift: 5
+</td>
+</tr>
+<tr>
+<td><strong>RED KITCHEN SCALES</strong></td>
+<td>
+<strong>IVORY KITCHEN SCALES</strong><br>
+Confidence (Probability): 58%, Lift: 20<br>
+<strong>MINT KITCHEN SCALES</strong><br>
+Confidence: 26.62%, Lift: 18
+</td>
+</tr>
+<tr>
+<td><strong>HAND WARMER OWL DESIGN</strong></td>
+<td>
+<strong>HAND WARMER RED LOVE HEART</strong><br>
+Confidence (Probability): 48%, Lift: 20
+</td>
+</tr>
+</tbody>
+</table>
 
 </div>
+
