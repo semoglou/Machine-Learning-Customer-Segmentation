@@ -261,7 +261,29 @@ Below is a breakdown of our customer segmentation analysis, showcasing the distr
 
 <a id="3-1-association-rules-mining"></a>
 ### 3.1 Association Rules Mining
-Advanced data mining techniques were used to discover frequent itemsets and robust association rules among products, providing insights into customer purchasing patterns and product associations.
+Association rules mining is a key technique used to discover interesting relationships between variables in large databases. We utilized this method to uncover patterns and associations between different product categories in our dataset. Here's an overview of the metrics and the algorithm used:
+
+#### `Metrics Explained`
+- **Support:** This metric measures how frequently an itemset appears in the dataset. A higher support indicates that the itemset is more common.
+
+- **Confidence:** Confidence assesses the likelihood that an item Y is purchased when item X is purchased, expressed as a percentage. It indicates the strength of the implication found in the data.
+
+- **Lift:** Lift compares the likelihood of Y being purchased when X is purchased against the likelihood of Y being purchased independently. It helps identify itemsets that are more likely to be bought together than separately.
+
+
+#### `FP-Growth Algorithm`
+For our analysis, we chose the FP-Growth Algorithm due to its efficiency in mining frequent itemsets without candidate generation, which is particularly useful for large datasets.
+
+#### `Configuration Parameters`
+- **Minimum Support:** 0.005 \ 
+This threshold filters out itemsets that appear in less than 0.5% of all transactions, focusing analysis on more commonly purchased items.
+
+- **Minimum Lift Threshold:** 1.2  \
+Sets a baseline to find item pairs at least 20% more likely to be purchased together than independently, highlighting potentially strong associations.
+
+- **Max Itemset Length:** 2  \
+Restricts itemsets to pairs, simplifying the complexity of analysis and making the findings more actionable for marketing strategies like product bundling or promotions.
+
 
 <a id="3-2-simple-recommendation-system"></a>
 ### 3.2 Simple Recommendation System
