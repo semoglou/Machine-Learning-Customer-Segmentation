@@ -289,7 +289,7 @@ Restricts itemsets to pairs, simplifying the complexity of analysis and making t
 ### 3.2 Simple Recommendation System
 A straightforward recommendation system was developed, utilizing the insights from association rules mining to suggest products to customers based on their historical purchasing patterns, aiming to enhance customer satisfaction and increase sales potential.
 
-#### `"Because you liked this item" Recommendations Overview`
+#### `"Because you Liked this Item" Recommendations Overview`
 
 <div align="center">
 
