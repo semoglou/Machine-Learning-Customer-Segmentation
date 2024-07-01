@@ -288,3 +288,12 @@ Restricts itemsets to pairs, simplifying the complexity of analysis and making t
 <a id="3-2-simple-recommendation-system"></a>
 ### 3.2 Simple Recommendation System
 A straightforward recommendation system was developed, utilizing the insights from association rules mining to suggest products to customers based on their historical purchasing patterns, aiming to enhance customer satisfaction and increase sales potential.
+
+#### `"Because you liked this item" Recommendations Overview`
+
+| Products in Basket         | Recommendations |
+|----------------------------|-----------------|
+| **JAM MAKING SET WITH JARS** | **JAM MAKING SET PRINTED**<br>Confidence (Probability): 32.25%, Lift: 8<br>**SET OF 3 CAKE TINS PANTRY DESIGN**<br>Confidence: 25.75%, Lift: 4.5<br>**RECIPE BOX PANTRY YELLOW DESIGN**<br>Confidence: 20.29%, Lift: 5<br>**SET OF 4 PANTRY JELLY MOULDS**<br>Confidence: 19.45%, Lift: 5 |
+| **RED KITCHEN SCALES**       | **IVORY KITCHEN SCALES**<br>Confidence (Probability): 58%, Lift: 20<br>**MINT KITCHEN SCALES**<br>Confidence: 26.62%, Lift: 18 |
+| **HAND WARMER OWL DESIGN**   | **HAND WARMER RED LOVE HEART**<br>Confidence (Probability): 48%, Lift: 20 |
+
