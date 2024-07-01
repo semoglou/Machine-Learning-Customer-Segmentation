@@ -275,7 +275,7 @@ Association rules mining is a key technique used to discover interesting relatio
 For our analysis, we chose the FP-Growth Algorithm due to its efficiency in mining frequent itemsets without candidate generation, which is particularly useful for large datasets.
 
 #### `Configuration Parameters`
-- **Minimum Support:** 0.005 \ 
+- **Minimum Support:** 0.005  \ 
 This threshold filters out itemsets that appear in less than 0.5% of all transactions, focusing analysis on more commonly purchased items.
 
 - **Minimum Lift Threshold:** 1.2  \
