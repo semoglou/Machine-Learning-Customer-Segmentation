@@ -202,6 +202,21 @@ In this stage of our analysis, we further refine our customer segmentation by ap
 - **Performance Metrics:** Silhouette Score, Davies-Bouldin Index, and Calinski-Harabasz Index
 - **t-SNE Visualization:** Visualization of High-Dimensional data in two dimensions, highlighting the distribution of clusters 
 
+### `Clustering Techniques Applied`
+
+Following the evaluation of feature importance and performance metrics, we adopted a multi-step clustering approach to optimize our segmentation strategy. This involved the sequential application of different clustering algorithms to refine our clusters and improve the granularity of our customer segmentation.
+
+- **K-Means Clustering** \
+Initially, we applied the K-Means clustering algorithm to establish a baseline for segmentation. K-Means was chosen for its efficiency and effectiveness in grouping large data sets into k distinct clusters based on attribute similarity.
+
+- **Hierarchical Clustering**\
+To further refine our cluster definitions and potentially identify a more optimal number of clusters, we then employed Hierarchical Clustering. This method allowed us to visualize and assess different cluster possibilities through a dendrogram, providing insight into how data points are grouped at various levels of granularity.
+
+- **Revised K-Means Clustering** \
+Based on the insights gained from Hierarchical Clustering, specifically the number of clusters suggested by the dendrogram, we performed a second round of K-Means clustering. This time, we used the cluster count obtained from the hierarchical method as the input for 'k'. This refined approach allowed us to fine-tune our segmentation, leading to more distinct and actionable customer groups.
+
+This iterative clustering strategy — starting with K-Means, refining with Hierarchical Clustering, and concluding with a revised K-Means — proved to be highly effective. It enabled us to leverage the strengths of both methods: the computational efficiency of K-Means and the detailed insight provided by Hierarchical Clustering. The final iteration of K-Means, using the informed choice of 'k', yielded the most meaningful and practical customer segments.
+
 
 ***
 
