@@ -316,6 +316,18 @@ Following the evaluation of feature importance and performance metrics, we adopt
 - **K-Means Clustering** \
    Initially, we applied the K-Means clustering algorithm to establish a baseline for segmentation. K-Means was chosen for its efficiency and effectiveness in grouping large data sets into k distinct clusters based on attribute similarity.
 
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/1kmeanselbow.png" alt="K-Means Elbow" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/1featimp.png" alt="Feature Importance" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/1tsne.png" alt="t-SNE Visualization" />
+</div>
+   
 - **Hierarchical Clustering**\
    To further refine our cluster definitions and potentially identify a more optimal number of clusters, we then employed Hierarchical Clustering. This method allowed us to visualize and assess different cluster possibilities through a dendrogram, providing insight into how data points are grouped at various levels of granularity.
 
