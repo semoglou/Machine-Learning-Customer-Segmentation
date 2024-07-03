@@ -80,9 +80,9 @@ This phase involved a deep dive into the dataset to understand the distribution 
 
 - **Product Popularity** \
    Investigated the most frequently purchased items by analyzing the 'Description' field.
-  <div align="center">
-     <img src="[images/feature1.png" alt="Feature One](https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/eda.png)" />
-   </div>
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/eda.png" alt="EDA Output" />
+</div>
 
 <a id="1-3-nlp-driven-product-categorization"></a>
 ### 1.3 NLP-Driven Product Categorization
