@@ -369,6 +369,15 @@ Below is a breakdown of our customer segmentation analysis, showcasing the distr
 | Understated Classic Artistry Enthusiasts     | 11.16         | 50.08              | 13.13                | 10.46                    | 15.17            | 0.0                  | 1.0                       | 0.0                         | 0.0                            | 0.0                    | 33.59         | 26.80           | 29.05          | 635                 |
 | Valued Classic Artistry Connoisseurs         | 13.87         | 37.18              | 15.01                | 15.43                    | 18.51            | 0.0                  | 1.0                       | 0.0                         | 0.0                            | 0.0                    | 66.64         | 71.89           | 71.95          | 722                 |
 
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/3treemap.png" alt="Treemap" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/3pie.png" alt="Pie Chart" />
+</div>
+
 ***
 
 ## 3. Part III
