@@ -378,6 +378,14 @@ Below is a breakdown of our customer segmentation analysis, showcasing the distr
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/3pie.png" alt="Pie Chart" />
 </div>
 
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/finalcateg.png" alt="Final Categories" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/finalrfmcat.png" alt="Final RFM Categories" />
+</div>
+
 ***
 
 ## 3. Part III
