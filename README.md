@@ -71,7 +71,7 @@ This phase involved a deep dive into the dataset to understand the distribution 
 #### `Key Areas of Focus`
 - **Sales Distribution by Time** \
    Analyzed sales data to uncover trends across different timescales—hourly, daily, and monthly. This helps in understanding peak shopping hours, busiest shopping days, and seasonal trends which are essential for inventory and marketing strategies.
-  ##### `Sales by Time of the Day`
+##### `Sales by Time of the Day`
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/salesvtime.png" alt="Sales vs Time" />
 </div>
@@ -174,6 +174,20 @@ The data matrix, comprising rows of individual products and columns of features 
     <td>Holiday Essentials</td>
   </tr>
 </table>
+</div>
+
+#### `t-SNE Visualization of Clusters`
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/tsnenlpwords.png" alt="t-SNE Visualization of Clusters" />
+</div>
+
+#### `Word Clouds of Clusters`
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/cluster0.png" alt="Cluster 0 Word Cloud" />
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/cluster1.png" alt="Cluster 1 Word Cloud" />
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/cluster2.png" alt="Cluster 2 Word Cloud" />
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/cluster3.png" alt="Cluster 3 Word Cloud" />
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/cluster4.png" alt="Cluster 4 Word Cloud" />
 </div>
 
 
