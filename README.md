@@ -218,6 +218,13 @@ Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/afterclipping.png" alt="Outlier Handling - Upper Clipping" />
 </div>
 
+#### `K-Means Clustering`
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/elbowrfm.png" alt="K-Means Clustering" />
+</div>
+
+#### `Clustering Results`
+
 <div align="center">
 <table>
   <thead>
