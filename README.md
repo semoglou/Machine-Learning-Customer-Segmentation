@@ -253,6 +253,14 @@ Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on
 </div>
 
 
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/treerfm.png" alt="RFM Treemap" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/pierfm.png" alt="RFM Pie Chart" />
+</div>
+
 <a id="2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns"></a>
 ### 2.2 Customer Segmentation using RFM Quantile Scores and Category Spending Patterns
 In this stage of our analysis, we further refine our customer segmentation by applying quantile scoring to the RFM metrics and analyzing spending patterns across various product categories. This dual approach allows us to gain a more nuanced understanding of customer behaviors and preferences.
