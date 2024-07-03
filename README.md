@@ -77,6 +77,9 @@ This phase involved a deep dive into the dataset to understand the distribution 
 
 - **Revenue by Country** \
    Mapped out revenue generation across different countries to pinpoint high-value markets and assess the global reach of the business.
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/revcou.png" alt="EDA Output" />
+</div>
 
 - **Product Popularity** \
    Investigated the most frequently purchased items by analyzing the 'Description' field.
