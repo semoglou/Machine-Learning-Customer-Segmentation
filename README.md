@@ -139,6 +139,11 @@ Our approach involves a process of text preprocessing and key term extraction to
 - **Integration of Price Range Data** \
    By including price segmentation, we add an economic dimension to the clustering process, aligning it with both qualitative and quantitative attributes.
   
+#### `K-Means Clustering`
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/silhouettewords.png" alt="Silhouette Words" />
+</div>
+  
 #### `Clustering Output`
 The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each labeled with an indicative name reflecting the thematic essence captured by the cluster:
 
