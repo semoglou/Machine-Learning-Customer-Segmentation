@@ -285,11 +285,7 @@ Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on
 
 
 <div align="center">
-  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/treerfm.png" alt="RFM Treemap" />
-</div>
-
-<div align="center">
-  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/pierfm.png" alt="RFM Pie Chart" />
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/treerfm.png" alt="RFM Treemap" /> <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/pierfm.png" alt="RFM Pie Chart" />
 </div>
 
 <a id="2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns"></a>
