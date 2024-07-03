@@ -209,11 +209,21 @@ Applied Recency, Frequency, Monetary (RFM) metrics to segment customers based on
       Monetary value measures how much money a customer has spent with the brand over a period of time. It helps in identifying the highest spending customers who are contributing more to the revenue.
 
 #### `RFM Distributions`
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/distin.png" alt="Initial Distribution" />
+</div>
+
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/beforeclippingrfm.png" alt="RFM Distributions" />
 </div>
 
 #### `Outlier Handling - Upper Clipping`
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/distfin.png" alt="Final Distribution" />
+</div>
+
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/afterclipping.png" alt="Outlier Handling - Upper Clipping" />
 </div>
