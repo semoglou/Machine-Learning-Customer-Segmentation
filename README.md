@@ -71,17 +71,17 @@ This phase involved a deep dive into the dataset to understand the distribution 
 #### `Key Areas of Focus`
 - **Sales Distribution by Time** \
    Analyzed sales data to uncover trends across different timescales—hourly, daily, and monthly. This helps in understanding peak shopping hours, busiest shopping days, and seasonal trends which are essential for inventory and marketing strategies.
-  ##### `Sales vs Time`
+  ##### `Sales by Time of the Day`
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/salesvtime.png" alt="Sales vs Time" />
 </div>
 
-##### `Sales vs Day`
+##### `Sales by Day of the Month`
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/salesvday.png" alt="Sales vs Day" />
 </div>
 
-##### `Sales vs Month`
+##### `Sales by Month`
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/salesvmonth.png" alt="Sales vs Month" />
 </div>
@@ -117,6 +117,15 @@ Our approach involves a process of text preprocessing and key term extraction to
    From the stemmed nouns, we compile a frequency map to measure the significance of each term within the set of texts.
 - **Selecting Representative Terms** \
    For groups of words sharing the same root, we choose the shortest term as the representative for simplicity and clarity.
+
+#### `Words Occurrence`
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/wordcloud.png" alt="Word Cloud" />
+</div>
+
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/treemap.png" alt="Treemap" />
+</div>
   
 #### `Keyword Filtering Strategy`
 - **Exclusion Criteria** \
