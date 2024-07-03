@@ -89,6 +89,10 @@ This phase involved a deep dive into the dataset to understand the distribution 
 - **Customer Demographics** \
    Explored demographic data, enhancing the understanding of our customer base.
 
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/dem.png" alt="Demographics" />
+</div>
+
 - **Revenue by Country** \
    Mapped out revenue generation across different countries to pinpoint high-value markets and assess the global reach of the business.
 <div align="center">
