@@ -200,6 +200,7 @@ The data matrix, comprising rows of individual products and columns of features 
 #### `Product Categories`
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/categoriestreemap.png" alt="Categories Tree Map" />
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/categoriesbarh.png" alt="Categories Analysis" />
 </div>
 
 ***
