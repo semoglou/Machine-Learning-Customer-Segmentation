@@ -7,14 +7,14 @@ It focuses on leveraging machine learning techniques to analyze and segment cust
 
 ## Overview
 -    [The Data Set](#the-data-set)
-- 1. [Part I](#1-part-i)
+- [Part I](#1-part-i)
    - 1.1 [Data Preparation & Feature Engineering](#1-1-data-preparation--feature-engineering)
    - 1.2 [Exploratory Analysis](#1-2-exploratory-analysis)
    - 1.3 [NLP-Driven Product Categorization](#1-3-nlp-driven-product-categorization)
-- 2. [Part II](#2-part-ii)
+- [Part II](#2-part-ii)
    - 2.1 [RFM Analysis](#2-1-rfm-analysis)
    - 2.2 [Customer Segmentation using RFM Quantile Scores and Category Spending Patterns](#2-2-customer-segmentation-using-rfm-quantile-scores-and-category-spending-patterns)
-- 3. [Part III](#3-part-iii)
+- [Part III](#3-part-iii)
    - 3.1 [Association Rules Mining](#3-1-association-rules-mining)
    - 3.2 [Simple Recommendation System](#3-2-simple-recommendation-system)
   
