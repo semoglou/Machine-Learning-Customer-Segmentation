@@ -197,6 +197,11 @@ The data matrix, comprising rows of individual products and columns of features 
 
 **Note:** The names assigned to each cluster are not absolute but serve as labels to facilitate easier analysis and discussion.
 
+#### `Product Categories`
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/categoriestreemap.png" alt="Categories Tree Map" />
+</div>
+
 ***
 
 ## 2. Part II
