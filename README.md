@@ -204,6 +204,9 @@ The (scaled) data matrix, comprising rows of individual products and columns of 
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/categoriesbarh.png" alt="Categories Analysis" />
 </div>
 
+#### `Further Handling of Negative Values using Categories`
+To further address negative total prices in the dataset, we identify transactions with negative amounts, group the data by customer and category, and filter out instances with negative total spending in any category. Specific invoices contributing to this "negativity" are isolated, and their total prices are set to zero. This adjustment ensures accurate and reliable records by preventing distortions in analysis caused by returns, discounts, or data entry errors.
+
 ***
 
 ## 2. Part II
