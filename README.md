@@ -316,7 +316,7 @@ In this stage of our analysis, we further refine our customer segmentation by ap
 
 #### `Clustering Techniques Applied`
 
-Following the evaluation of feature importance and performance metrics, we adopted a multi-step clustering approach to optimize our segmentation strategy. This involved the sequential application of different clustering algorithms to refine our clusters and improve the granularity of our customer segmentation (all features were scaled appropriately before applying the algorithms).
+Following the evaluation of feature importance and performance metrics, we adopted a multi-step clustering approach to optimize our segmentation strategy. This involved the sequential application of different clustering algorithms to refine our clusters and improve the granularity of our customer segmentation (all features were scaled appropriately before applying the algorithms and the results were then assessed back on the initial dataset to ensure consistency and reliability.).
 
 - **K-Means Clustering** \
    Initially, we applied the K-Means clustering algorithm to establish a baseline for segmentation. K-Means was chosen for its efficiency and effectiveness in grouping large data sets into k distinct clusters based on attribute similarity.
