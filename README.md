@@ -1,6 +1,6 @@
 # ML Online Retail Analysis & Customer Segmentation
 
-This repository contains the Machine Learning Customer Segmentation Project, which is part of my MSc Business Mathematics. 
+This repository contains the Machine Learning Project, which is part of my MSc in Business Mathematics. 
 It focuses on leveraging machine learning techniques to analyze and segment customers based on their purchasing behaviors from the Online Retail Data Set available at the UCI Machine Learning Repository.
 
 ***
