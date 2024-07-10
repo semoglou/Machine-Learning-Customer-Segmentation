@@ -148,7 +148,7 @@ Our approach involves a process of text preprocessing and key term extraction to
 </div>
   
 #### `Clustering Output`
-The data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each labeled with an indicative name reflecting the thematic essence captured by the cluster:
+The (scaled) data matrix, comprising rows of individual products and columns of features (keywords and price ranges), serves as the input for clustering algorithms. The outcome is a set of clusters, each labeled with an indicative name reflecting the thematic essence captured by the cluster:
 
 <div align="center">
 <table>
