@@ -495,7 +495,7 @@ This approach aids in identifying key influencers within the product network and
    - **Implementation:** Iterates over unique descriptions and adds each as a node to the graph.
 
 - **`Add Edge Attributes`**
-   - **Description:** Adds edges between nodes with attributes such as confidence, support, and lift, which signify the strength and significance of the relationships.
+   - **Description:** Adds edges between nodes with attributes such as confidence, support, and lift, which signify the direction, strength and significance of the relationships.
    - **Implementation:** For each pair of connected nodes, adds an edge and assigns attributes based on derived association rules. If attributes are missing, defaults to predefined minimal values.
 
 - **`Precompute Descriptions to Categories`**
