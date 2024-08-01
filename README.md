@@ -484,7 +484,7 @@ Confidence (Probability): 48%, Lift: 20
 <a id="3-3-network-graph-analysis-of-product-invoices-and-recommendations"></a>
 ### 3.3 Network Graph Analysis of Product Invoices and Recommendations
 
-In our analysis, we employed association rules mining for both products and product categories to construct a directed graph that visualizes the relationships between products based on invoice data. 
+In our analysis, we employed association rules mining for both products and product categories to construct a directed graph that encapsulates the relationships between products based on invoice data. 
 The graph is constructed using both direct product-to-product associations and broader category-to-category relationships as a fallback mechanism.
 This approach aids in identifying key influencers within the product network and simplifies the understanding of complex interdependencies in purchasing behavior.
 
