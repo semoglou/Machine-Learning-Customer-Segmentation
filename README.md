@@ -490,7 +490,7 @@ This approach aids in identifying key influencers within the product network and
 
 #### Detailed Process
 
-- **'Initialize Nodes`**
+- **`Initialize Nodes`**
    - **Description:** Initializes graph nodes using unique product descriptions from the data.
    - **Implementation:** Iterates over unique descriptions and adds each as a node to the graph.
 
@@ -531,7 +531,7 @@ Personalized PageRank considers the entire graph's structure, which helps identi
 A* search algorithm finds the shortest path between nodes in a graph. In this context, the "shortest path" is based on the confidence of co-purchase edges, with higher confidence leading to lower costs.
 The path offers a personalized sequence of products that a customer is likely to purchase. This journey can make the shopping experience more engaging.
 
-- **`Example`:**
+- **`Example`**
    - Start Node: 'LUNCH BAG RED RETROSPOT'
    - Goal Node: 'HAND WARMER OWL DESIGN'
 <div align="center">
