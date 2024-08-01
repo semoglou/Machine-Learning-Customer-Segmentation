@@ -529,7 +529,8 @@ Personalized PageRank considers the entire graph's structure, which helps identi
 #### A* Search Algorithm Recommendations ("Path" of recommended products)
 
 A* search algorithm finds the shortest path between nodes in a graph. In this context, the "shortest path" is based on the confidence of co-purchase edges, with higher confidence leading to lower costs.
-The path offers a personalized sequence of products that a customer is likely to purchase. This journey can make the shopping experience more engaging.
+The path offers a personalized sequence of products that a customer is likely to purchase.
+By dynamically generating product paths starting from a user-selected product, this approach not only enhances the shopping experience by suggesting highly relevant products but also provides actionable insights for optimizing product placements.
 
 - **`Example`**
    - Start Node: 'LUNCH BAG RED RETROSPOT'
