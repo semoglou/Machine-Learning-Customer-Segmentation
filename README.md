@@ -18,6 +18,7 @@ This repository contains the Machine Learning Project, which is part of my MSc i
 - [Part III](#3-part-iii)
    - 3.1 [Association Rules Mining](#3-1-association-rules-mining)
    - 3.2 [Simple Recommendation System](#3-2-simple-recommendation-system)
+   - 3.3 [Network Graph Analysis of Product Invoices and Recommendations](#3-3-network-graph-analysis-of-product-invoices-and-recommendations)
   
 ***
 
@@ -412,7 +413,6 @@ Association rules mining is a key technique used to discover interesting relatio
 
 - **Lift:** Lift compares the likelihood of Y being purchased when X is purchased against the likelihood of Y being purchased independently. It helps identify itemsets that are more likely to be bought together than separately.
 
-
 #### `FP-Growth Algorithm`
 For our analysis, we chose the FP-Growth Algorithm due to its efficiency in mining frequent itemsets without candidate generation, which is particularly useful for large datasets.
 
@@ -481,3 +481,59 @@ Confidence (Probability): 48%, Lift: 20
 
 </div>
 
+<a id="3-3-network-graph-analysis-of-product-invoices-and-recommendations"></a>
+### 3.3 Network Graph Analysis of Product Invoices and Recommendations
+
+In our analysis, we employed association rules mining for both products and product categories to construct a directed graph that visualizes the relationships between products based on invoice data. 
+The graph is constructed using both direct product-to-product associations and broader category-to-category relationships as a fallback mechanism.
+This approach aids in identifying key influencers within the product network and simplifies the understanding of complex interdependencies in purchasing behavior.
+
+#### Detailed Process
+
+- **'Initialize Nodes`**
+   - **Description:** Initializes graph nodes using unique product descriptions from the data.
+   - **Implementation:** Iterates over unique descriptions and adds each as a node to the graph.
+
+- **`Add Edge Attributes`**
+   - **Description:** Adds edges between nodes with attributes such as confidence, support, and lift, which signify the strength and significance of the relationships.
+   - **Implementation:** For each pair of connected nodes, adds an edge and assigns attributes based on derived association rules. If attributes are missing, defaults to predefined minimal values.
+
+- **`Precompute Descriptions to Categories`**
+   - **Description:** Caches category information for each product description to speed up graph construction.
+   - **Implementation:** Compiles a dictionary mapping each product description to its respective category, utilizing data from the dataset to facilitate quick access during graph operations.
+
+- **`Build Graph`**
+   - **Description:** Constructs the network graph using both direct product-to-product associations and broader category-to-category relationships.
+   - **Implementation:** 
+     - Processes groups of products by invoices to determine co-purchase relationships.
+     - Directly connects products with strong association rules.
+     - Where direct connections are lacking, uses category-level associations as a fallback to ensure comprehensive network connectivity.
+
+- **`Connect Isolated Nodes`**
+   - **Description:** Integrates nodes that remain isolated after the initial construction into the broader network to maintain connectivity.
+   - **Implementation:** 
+     - Identifies isolated nodes using NetworkX functionalities.
+     - For each isolated node, evaluates potential category connections and links each to the most central node in the most connected category, determined by the highest confidence measures and using degree centrality to assess centrality within categories.
+
+#### Personalized PageRank Recommendations
+
+Personalized PageRank adapts the original PageRank algorithm to focus on a specific node (product), emphasizing paths that start from this node. This provides a personalized ranking of all nodes in the graph based on their relevance to the starting node.
+By tailoring the PageRank to a starting node, we ensure that the recommendations are highly relevant to the user's current interest or recent activity.
+Personalized PageRank considers the entire graph's structure, which helps identify both direct and indirect relationships between products. This holistic view can reveal less obvious but potentially valuable recommendations.
+
+- **`Example`**
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/PRrec.png" alt="Personalized PageRank Recommendations" />
+</div>
+
+#### A* Search Algorithm Recommendations ("Path" of recommended products)
+
+A* search algorithm finds the shortest path between nodes in a graph. In this context, the "shortest path" is based on the confidence of co-purchase edges, with higher confidence leading to lower costs.
+The path offers a personalized sequence of products that a customer is likely to purchase. This journey can make the shopping experience more engaging.
+
+- **`Example`:**
+   - Start Node: 'LUNCH BAG RED RETROSPOT'
+   - Goal Node: 'HAND WARMER OWL DESIGN'
+<div align="center">
+  <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/APathrec.png" alt="A* Search Algorithm (Path) Recommendations" />
+</div>
