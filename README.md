@@ -521,7 +521,7 @@ Personalized PageRank adapts the original PageRank algorithm to focus on a speci
 By tailoring the PageRank to a starting node, we ensure that the recommendations are highly relevant to the user's current interest or recent activity.
 Personalized PageRank considers the entire graph's structure, which helps identify both direct and indirect relationships between products. This holistic view can reveal less obvious but potentially valuable recommendations.
 
-- **`Example`**
+**`Example`**
 <div align="center">
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/PRrec.png" alt="Personalized PageRank Recommendations" />
 </div>
@@ -532,7 +532,7 @@ A* search algorithm finds the shortest path between nodes in a graph. In this co
 The path offers a personalized sequence of products that a customer is likely to purchase.
 By dynamically generating product paths starting from a user-selected product, this approach not only enhances the shopping experience by suggesting highly relevant products but also provides actionable insights for optimizing product placements.
 
-- **`Example`**
+**`Example`**
    - Start Node: 'LUNCH BAG RED RETROSPOT'
    - Goal Node: 'HAND WARMER OWL DESIGN'
 <div align="center">
