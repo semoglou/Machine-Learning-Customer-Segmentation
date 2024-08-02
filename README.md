@@ -526,7 +526,7 @@ Personalized PageRank considers the entire graph's structure, which helps identi
   <img src="https://github.com/semoglou/Machine-Learning-Customer-Segmentation/blob/main/images_outputs/PRrec.png" alt="Personalized PageRank Recommendations" />
 </div>
 
-#### A* Search Algorithm Recommendations ("Path" of recommended products)
+#### A* Graph Search Algorithm Recommendations ("Path" of recommended products)
 
 A* search algorithm finds the shortest path between nodes in a graph. In this context, the "shortest path" is based on the confidence of co-purchase edges, with higher confidence leading to lower costs.
 The path offers a personalized sequence of products that a customer is likely to purchase.
