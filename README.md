@@ -1,4 +1,4 @@
-# ML Online Retail Analysis & Customer Segmentation
+# Machine Learning for Online Retail Analytics & Customer Segmentation
 
 This repository contains the Machine Learning Project, which is part of my MSc in Business Mathematics.  
 The project focuses on leveraging machine learning techniques for customer segmentation, product-description categorization, association rules mining and network graph analysis.  
