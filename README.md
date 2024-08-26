@@ -6,6 +6,10 @@ By analyzing and segmenting customers based on their purchasing behaviors, categ
 
 **Supervising Professor:** [D. Panagopoulos](https://www.linkedin.com/in/dpanagopoulos/)
 
+### Achievement 🏆
+**Evaluation: Excellent.**  
+The project was recognized for its innovative approach and effective application of advanced machine learning methods.
+
 ***
 
 ## Overview
